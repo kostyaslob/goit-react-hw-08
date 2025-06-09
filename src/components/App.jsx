@@ -1,4 +1,7 @@
 import css from "./App.module.css";
+import { lazy, Suspense } from "react";
+import { Route, Routes } from "react-router-dom";
+import { Layout } from ;
 
 import { ContactForm } from "./ContactForm/ContactForm";
 import { SearchBox } from "./SearchBox/SearchBox";
