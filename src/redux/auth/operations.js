@@ -3,7 +3,10 @@ import { createAsyncThunk } from "@reduxjs/toolkit";
 
 axios.defaults.baseURL = "https://connections-api.goit.global/";
 
-export const register = createAsyncThunk("auth/register", async () => { });
+export const register = createAsyncThunk("auth/register", async (values) => {
+    const response = await axios.post("/users/signup", values);
+    return response.data;
+});
 
 export const login = createAsyncThunk("auth/login", async () => { });
 
