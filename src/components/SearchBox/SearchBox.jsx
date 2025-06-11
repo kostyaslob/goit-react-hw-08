@@ -16,7 +16,7 @@ export const SearchBox = () => {
         };    
 
     return (
-        <div>
+        <div className={css.container}>
             <label className={css.searchLabel}><FaSearch /> Find contacts by name</label>
             <input
                 className={css.searchInput}
