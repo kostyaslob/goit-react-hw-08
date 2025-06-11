@@ -3,7 +3,8 @@ import { FaSearch } from "react-icons/fa";
 
 import { useSelector, useDispatch } from "react-redux";
 import { useId } from "react";
-import { changeFilter, selectNameFilter } from "../../redux/filtersSlice.js";
+import { changeFilter } from "../../redux/filters/slice";
+import { selectNameFilter } from "../../redux/filters/selectors";
 
 export const SearchBox = () => {
     const id = useId()
