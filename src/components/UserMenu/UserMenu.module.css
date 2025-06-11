@@ -6,4 +6,29 @@
 
 .username {
     font-weight: 700;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.button {
+    display: block;
+    width: 120px;
+    height: 40px;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    text-decoration: none;
+    line-height: 20px;
+    font-weight: 400;
+    font-size: 20px;
+    letter-spacing: 0.2px;
+    background-color: rgb(255, 107, 10);
+    color: rgb(255, 255, 255);
+    border: 1px solid transparent;
+    padding: 4px 8px;
+    
+    &:hover {
+        scale: 1.1;
+    }
 }
